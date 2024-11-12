@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Default</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" /> 
+    <link rel="shortcut icon" href="images/load.jpg" type="image/x-icon">
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Default</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#social media">Social Media</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Default
+</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <li><a href="#social media" onclick="toggleMenu()">Social Media</a></li>
+        </div>
+      </div>
+    </nav>
+    
+      <div class="section__pic-container">
+        <img src="images/head.png" alt="profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hey there, I'm</p>
+        <h1 class="title">Default</h1>
+        <div class="btn-container">
+       <section id="about"> 
+    <section class="about">
+      <h4 class="h44">A<span class="span11">bo</span>ut</h4>
+     
+      <h2 class="h2w"><b>This is a defualt website</b><br>The purpose of making this website is to make people easily build their Portfolio by themeselves.<br>This idea and desgin was inspired by Victor<br>
+      </h2>
+    </section>
+       </section>
+       <!--animation-->
+        <div class="image-container">
+    <img src="images/animation/img1.jpg" alt="Pic" class="animated-image">
+    <div class="overlay">
+        <div class="text">A Default</div>
+    </div>
+</div>
+<div class="image-container">
+    <img src="images/animation/img2.jpg" alt="Pic" class="animated-image">
+    <div class="overlay">
+        <div class="text">A Default</div>
+    </div>
+</div>
+<div class="image-container">
+    <img src="images/animation/img3.jpg" alt="Pic" class="animated-image">
+    <div class="overlay">
+        <div class="text">A Default</div>
+    </div>
+</div>
+      
+   
+
+<div class="padq"> </div>
+<div class="padq1"> </div>       
+<form class="row g-3" action="https://formsubmit.co/moradeyovictor@gmail.com" method="POST" id="Form1"> 
+<input type="text" placeholder="Name" required name="Name"> 
+<input type="email" placeholder="Email" required name="email"> 
+<input type="text" placeholder="Message" required name="Message"> 
+<input type="hidden" name="_captcha" value="false"> 
+<input type="hidden" name="_blacklist" value="spammy pattern, banned term, phrase"> 
+<input type="hidden" name="_autoresponse" value="Welcome">
+<div class="btn-box"> 
+<button type="submit">Submit</button> 
+<section id="contact">
+       
+       
+  
+       
+       
+</div>   
+</form>
+<div class="padq1"> </div>
+<section id="social media">
+<h4 class="h44">S<span class="span11">oci</span>al me<span class="span11">dia</span></h4>
+       <div class="iconn">
+       
+          <a href="https://www.instagram.com/victor_thedeveloper?igsh=MXcwYm01ZTBpeXZiNg=="><img
+            src="images/icon/Instagram.svg"
+            alt="Instagram link"
+            class="icon"  
+          /></a>
+      
+          <a href="https://x.com/moradeyoOlamip1?t=50PspAOyzIg_9ayyAqCvPg&s=09"><img
+            src="images/icon/x-twitter.svg"
+            alt="X link"
+            class="icon"         
+          /></a>
+          <a href="https://discord.com/invite/WJ5CvMDJ"><img
+            src="images/icon/discord.svg"
+            alt="Discord link"
+            class="icon"      
+          /></a>
+          <a href="https://www.linkedin.com/in/moradeyo-olamiposi-a25420245?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img
+            src="images/icon/LinkedIn.svg"
+            alt="linkedin link"
+            class="icon"      
+          /></a>
+          
+          <div class="padq3"> </div>
+         
+        <div class="add-widgets">
+        <button id="btn">Add Widgets</button>
+        </div>
+
+    <footer>
+ 
+      <p>Copyright &#169; 2024 Victor Codes. All Rights Reserved.</p>
+    </footer>
+    <script>
+        function toggleMenu() {
+  const menu = document.querySelector(".menu-links");
+  const icon = document.querySelector(".hamburger-icon");
+  menu.classList.toggle("open");
+  icon.classList.toggle("open");
+}
+document.querySelectorAll('.image-container').forEach(container => {
+    container.addEventListener('click', () => {
+        container.classList.toggle('clicked');
+    });
+});
+
+const btn = document.getElementById("btn")
+
+btn.addEventListener("click", function() {alert("Login To Admin Page"); });
+    </script>
+  </body>
+</html>
